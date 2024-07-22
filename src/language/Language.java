@@ -9,7 +9,7 @@ public enum Language {
         return switch (langPrefix) {
             case "fr" -> French;
             case "en" -> English;
-            default -> throw new IllegalStateException(STR."Unexpected Language: \{langPrefix}");
+            default -> throw new IllegalStateException("Unexpected Language: " + langPrefix);
         };
     }
 }

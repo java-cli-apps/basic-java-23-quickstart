@@ -1,9 +1,9 @@
-# Un template d'Application en Ligne de Commande (CLI) avec Java 22 et la JEP 458
+# Un template d'Application en Ligne de Commande (CLI) avec Java 23 et la JEP 458
 
-Le template **basic-java-22-quickstart** permet de démarrer une nouvelle application en commande ligne avec Java sans
+Le template **basic-java-23-quickstart** permet de démarrer une nouvelle application en commande ligne avec Java sans
 utiliser aucun système de build (autre que `make`).
 
-Ce template nécessite d'utiliser Java 22 ou une version supérieure car il utilise les JEPs suivantes :
+Ce template nécessite d'utiliser Java 23 ou une version supérieure car il utilise les JEPs suivantes :
 
 * La [JEP 458](https://openjdk.org/jeps/458) qui permet de lancer un programme Java dont le code est réparti dans
   plusieurs fichiers sources sans avoir besoin de les compiler préalablement
@@ -73,7 +73,7 @@ DEST_DIR=/home/user make test-install
 ```
 
 ```console
-PATH=/home/user/MyCmdLine/bin:/usr/lib/jvm/jdk-22/bin:/home/fopy/.local/bin:... MyCmdLine.sh
+PATH=/home/user/MyCmdLine/bin:/usr/lib/jvm/jdk-23/bin:/home/fopy/.local/bin:... MyCmdLine.sh
 Bonjour 🇫🇷
 ```
 
@@ -85,6 +85,6 @@ Il ne nous reste plus qu'à :
 
 ## Autres templates
 
-Si vous ne disposez pas de Java 22, vous pouvez utiliser le template [basic-java-quickstart](https://github.com/java-cli-apps/basic-java-quickstart)
+Si vous ne disposez pas de Java 23, vous pouvez utiliser le template [basic-java-quickstart](https://github.com/java-cli-apps/basic-java-quickstart)
 qui ne requiert que la version 11 de Java. Il est alors nécessaire que tout le code Java réside dans le même fichier
 comme décrit dans la [JEP 330](https://openjdk.org/jeps/330).
