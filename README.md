@@ -7,7 +7,8 @@ Ce template nécessite d'utiliser Java 23 ou une version supérieure car il util
 
 * La [JEP 458](https://openjdk.org/jeps/458) qui permet de lancer un programme Java dont le code est réparti dans
   plusieurs fichiers sources sans avoir besoin de les compiler préalablement
-* La [JEP 463](https://openjdk.org/jeps/463) qui simplifie la déclaration de la méthode `main`
+* La [JEP 477](https://openjdk.org/jeps/477) qui simplifie la déclaration de la méthode `main`
+  et permet d'utiliser les méthodes de la classe `java.io.IO` sans aucun import
 
 Pour démarrer une nouvelle application en utilisant ce template, vous pouvez suivre les étapes suivantes.
 

@@ -2,13 +2,16 @@ package language.fr;
 
 import java.util.Optional;
 
+import language.api.Greeting;
 import net.fellbaum.jemoji.Emoji;
 import net.fellbaum.jemoji.EmojiManager;
 
-public class Bonjour {
-    public static void main() {
+public class Bonjour implements Greeting {
+
+    @Override
+    public String getGreeting() {
         Optional<Emoji> optionalEmoji = EmojiManager.getByAlias("fr");
-        String drapeau = optionalEmoji.map((Emoji emoji) -> emoji.getEmoji()).orElse("");
-        System.out.println("Bonjour " + drapeau);
+        String flag = optionalEmoji.map(Emoji::getEmoji).orElse("");
+        return "Bonjour " + flag;
     }
 }
