@@ -3,7 +3,6 @@
 void main() {
     var language = askLanguage();
     println(language.getGreeting());
-    System.exit(0);
 }
 
 private Language askLanguage() {
