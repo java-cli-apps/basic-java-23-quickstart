@@ -20,4 +20,14 @@ public enum Language {
         String flag = optionalEmoji.map(Emoji::getEmoji).orElse("");
         return message + " " + flag;
     }
+
+    public static Language fromString(String response) {
+        return switch (response) {
+            case String s when (s == null || s.isEmpty()) -> {
+                throw new IllegalArgumentException("No response was provided !");
+            }
+            case String s when s.equals("Y") -> Language.English;
+            default -> Language.French;
+        };
+    }
 }
