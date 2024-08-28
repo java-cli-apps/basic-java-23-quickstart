@@ -1,4 +1,4 @@
-# Un template d'Application en Ligne de Commande (CLI) avec Java 23 et la JEP 458
+# Un template d'Application en Ligne de Commande (CLI) avec Java 23 et les JEP 458 et 477
 
 Le template **basic-java-23-quickstart** permet de démarrer une nouvelle application en commande ligne avec Java sans
 utiliser aucun système de build (autre que `make`).
@@ -7,8 +7,10 @@ Ce template nécessite d'utiliser Java 23 ou une version supérieure car il util
 
 * La [JEP 458](https://openjdk.org/jeps/458) qui permet de lancer un programme Java dont le code est réparti dans
   plusieurs fichiers sources sans avoir besoin de les compiler préalablement
-* La [JEP 477](https://openjdk.org/jeps/477) qui simplifie la déclaration de la méthode `main`
-  et permet d'utiliser les méthodes de la classe `java.io.IO` sans aucun import
+* La [JEP 477](https://openjdk.org/jeps/477) qui permet de :
+  * Se passer de déclaration de classe
+  * Simplifier la déclaration de la méthode `main`
+  * Utiliser les méthodes de la classe `java.io.IO` sans devoir les importer
 
 ## Créer un dépôt depuis ce template
 
