@@ -29,13 +29,13 @@ Pour changer le nom de l'application, initialement nommée _BasicQuickstart_, il
 dans le terminal ou dans le fichier `.envrc`, comme suit :
 
 ```bash
-export APP_NAME=MyCmdLine
+$ export APP_NAME=MyCmdLine
 ```
 
 ### Lancer l'application localement
 
 ```bash
-make test
+$ make test
 ```
 
 ```console
@@ -49,7 +49,7 @@ Bonjour 🇫🇷
 Le package de l'application comprend les sources ainsi que ses dépendances.
 
 ```bash
-make package
+$ make package
 ```
 
 ```console
@@ -72,7 +72,7 @@ Cela permet d'ajouter plusieurs applications dans le `PATH` et donc d'invoquer d
 ### Installer l'application
 
 ```bash
-DEST_DIR=/home/user make install
+$ DEST_DIR=/home/user make install
 ```
 
 ```console
@@ -82,7 +82,7 @@ unzip -q -d /home/user build/MyCmdLine.zip
 ### Lancer l'application installée
 
 ```bash
-DEST_DIR=/home/user make test-install
+$ DEST_DIR=/home/user make test-install
 ```
 
 ```console
