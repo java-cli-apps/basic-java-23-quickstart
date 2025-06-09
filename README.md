@@ -25,8 +25,8 @@ de votre nouvelle application à partir de ce template, vous pouvez suivre les �
 
 ### Changer le nom de l'application
 
-Pour changer le nom de l'application, initialement nommée _BasicQuickstart_, il faut modifier la variable `APP_NAME`
-dans le terminal ou dans le fichier `.envrc`, comme suit :
+Pour changer le nom de l'application, initialement nommée _BasicQuickstart_, il faut positionner la variable `APP_NAME`
+dans le terminal comme suit :
 
 ```bash
 $ export APP_NAME=MyCmdLine
