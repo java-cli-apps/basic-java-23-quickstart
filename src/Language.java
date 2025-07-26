@@ -23,10 +23,10 @@ public enum Language {
 
     public static Language fromString(String language) {
         return switch (language) {
-            case String s when s.equals(French.name()) -> Language.French;
-            case String s when s.equals(English.name()) -> Language.English;
+            case String s when s.equals(French.name()) -> French;
+            case String s when s.equals(English.name()) -> English;
             default ->
-                    throw new IllegalArgumentException("No response or unknown language provided: " + language);
+                    throw new IllegalArgumentException("No response or unknown language provided.");
         };
     }
 }
