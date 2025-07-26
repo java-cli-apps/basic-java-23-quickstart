@@ -40,7 +40,7 @@ $ make test
 
 ```console
 ./bin/Application.sh
-Do you speak English (Y/N) ? N
+Quelle langue parlez-vous / Which language do you speak (French / English) ? French
 Bonjour 🇫🇷
 ```
 
@@ -87,7 +87,7 @@ $ DEST_DIR=/home/user make test-install
 
 ```console
 PATH=/home/user/MyCmdLine/bin:/usr/lib/jvm/jdk-23/bin:/home/fopy/.local/bin:... MyCmdLine.sh
-Do you speak English (Y/N) ? N
+Quelle langue parlez-vous / Which language do you speak (French / English) ? French
 Bonjour 🇫🇷
 ```
 
