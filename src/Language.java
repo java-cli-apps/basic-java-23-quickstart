@@ -4,7 +4,7 @@ import net.fellbaum.jemoji.EmojiManager;
 import java.util.Optional;
 
 public enum Language {
-    French("Bonjour", "fr") ,
+    French("Bonjour", "fr"),
     English("Hello", "gb");
 
     private final String message;
@@ -21,13 +21,12 @@ public enum Language {
         return message + " " + flag;
     }
 
-    public static Language fromString(String response) {
-        return switch (response) {
-            case String s when (s == null || s.isEmpty()) -> {
-                throw new IllegalArgumentException("No response was provided !");
-            }
-            case String s when s.equals("Y") -> Language.English;
-            default -> Language.French;
+    public static Language fromString(String language) {
+        return switch (language) {
+            case String s when s.equals(French.name()) -> Language.French;
+            case String s when s.equals(English.name()) -> Language.English;
+            default ->
+                    throw new IllegalArgumentException("No response or unknown language provided: " + language);
         };
     }
 }
